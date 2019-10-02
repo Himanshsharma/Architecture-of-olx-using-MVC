@@ -1,0 +1,22 @@
+<% for(var i =0;i< chats.length; i++ ){ %>
+    User <%=i+1 %>
+    <% for(var j = 0; j < chats[i].length; j++){ %>
+        <h1>
+                <% if(chats[i][j].from == 'buyer'){ %>
+                    You:
+                <% }else{ %>
+                    Owner:
+                <% } %>
+                <%=chats[i][j].message %></h1>
+    <% } %>
+    <form method="post">
+        <input name="message" />
+        <input type="hidden" name="buyerid" value="<%=chats[i][0].buyerId %>" />
+        <button type="submit">reply</button>
+    </form>
+    <br />
+    <br />
+    <br />
+    <br />
+
+<% } %>

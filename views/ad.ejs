@@ -1,0 +1,24 @@
+<%- include('header') %>
+<h1>
+    Ad Name: <%=ad.name %>
+</h1>
+
+<% if(user) { %>
+
+    <% for(var i = 0; i< messages.length; i++){ %>
+        <h2>
+            <% if(messages[i].from == 'buyer'){ %>
+                You:
+            <% }else{ %>
+                Owner:
+            <% } %>
+            <%=messages[i].message %>
+        </h2>
+    <% } %>
+    
+<h1>Chat</h1>
+<form method="post">
+    <input name="msg" />
+    <button type="submit">send</button>
+</form>
+    <% } %>
