@@ -1,11 +1,11 @@
 # Architecture-of-olx-using-MVC
-node package manager
-npm is a command line interface program to manage node.js libraries (it stands for node package manager ). Check out the doc, it is awesome and amazing. As you mentioned, just type npm install in a command prompt, and voilà, you have the library in your local node modules.
+N0DE PACKAGE MANAGER
+NPM is a command line interface program to manage node.js libraries (it stands for node package manager ). Check out the doc, it is awesome and amazing. As you mentioned, just type npm install in a command prompt, and voilà, you have the library in your local node modules.
 
 
 
 
-modules:-
+MODULES:-
 npm install express
 npm install lodash
 npm install ejs
